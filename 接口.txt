@@ -1,0 +1,49 @@
+film/index 页面   
+1. 查看电影详情    url: '/film/' + id,
+2.  确认提价电影评分  调评分接口   url: '/fe', post 
+film/detail 页面
+1. 调查看电影详情接口   url: '/film/' + id,
+2. 电影评论接口   /api/fe    get
+
+film/tacket 
+1. 电影排片查询   "/arrangement/film/" + id, 
+
+seat
+1. 查看排片详情   "/arrangement/film/" + id, 
+2. 查询排片座位情况     url: "/arrangement/getSeats?id=" + id,
+3. 加入购物车接口   url: "/cart",
+
+
+活动页面
+
+1. 查询活动列表  url ：/api/activity
+2. 报名活动接口  url：/api/registration
+
+
+留言
+1. 查询员工列表：  url: '/worker'    get
+2. 查询留言列表：url：/api/lm         get
+3.查看我的评价： url：  url: '/we?id=' + id,  get
+4. 评价客服接口：url: '/we',  post
+5. 对影院留言接口   url: '/lm'  post
+
+
+个人中心
+
+购物车页面
+1.  查询我的购物车接口  url：'/cart?uid=' + id        get
+2.  删除购物车接口    url: '/cart?id=' + id              delete
+3.  保存订单接口    url: "/order",                            post
+
+
+订单页面
+1.查询我的订单接口   url: "/order/user/" + id,      get
+2.支付接口  url：'/order/pay?id=' + id,             get
+
+ 
+个人设置
+1. 查询用户信息  url：'/user/' + id                      get
+2. 修改、更新用户信息  url： url: '/user',              put
+3.上传头像接口  url："/upload"                           post
+
+
